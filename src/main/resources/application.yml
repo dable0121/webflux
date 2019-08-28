@@ -1,0 +1,27 @@
+management:
+  endpoints:
+    env:
+      enabled: true
+      sensitive: false
+    health:
+      enabled: true
+      sensitive: false
+    info:
+      enabled: true
+      sensitive: false
+    beans:
+      enabled: true
+      sensitive: false
+    metrics:
+      enabled: true
+      sensitive: false
+    shutdown:
+      enabled: true
+      path: /kill
+      sensitive: false
+    web:
+      exposure:
+        include: '*'
+    server:
+      port: 8081
+
